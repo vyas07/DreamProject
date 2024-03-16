@@ -14,7 +14,6 @@ useEffect(() =>{
 setTimeout(()=> Navigation.navigate('Profile'),5000)
 
 },[])
-
   return(
     <View className="flex-1 justify-center items-center bg-blue-900 space-y-5">
           <View className="bg-white/60  rounded-full shadow-md shadow-gray-400" style={{padding: hp(5)}}>
