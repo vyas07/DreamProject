@@ -6,13 +6,14 @@ import { BellIcon , MagnifyingGlassIcon } from 'react-native-heroicons/outline';
 import * as Icon from "react-native-feather";
 import { themeColors } from '../theme/theme';
 import Categories from '../components/categories';
+import Botiques from '../components/botiqueList';
+import { botiques } from '../constants/data';
 
 
 export default function ProfileScreen(){
   return(
   <SafeAreaView className="flex-1 bg-white">
-      {/* <View className="flex-1 bg-white"> */}
-               <StatusBar style="dark"/>
+        <StatusBar style="dark"/>
                <ScrollView showsVerticalIndicator={false}
                contentContainerStyle={{paddingBottom:50}}
                className="space-y-6 pt-4" >
@@ -30,13 +31,13 @@ export default function ProfileScreen(){
                       <Text style={{fontSize: hp(1.7)}} className="text-neutral-600 font-bold">Hello, Poornima!</Text>
                  </View>
 
-                  <View className="mx-2 flex-row justify-between item-center mb-2">
+                  {/* <View className="mx-2 flex-row justify-between item-center mb-2">
                        <Text style={{fontSize: hp(3)}} className="text-neutral-600 font-semibold">Elevate your style with <Text className="text-amber-400">US</Text></Text>
                   </View>
 
                    <View className="mx-2 flex-row justify-between item-center mb-2">
                        <Text style={{fontSize: hp(3)}} className="text-neutral-600 font-semibold">From your <Text className="text-amber-400">Home</Text></Text>
-                    </View>
+                    </View> */}
 
                     <View className="mx-1 flex-row item-center rounded-full bg-black/5 p-[6px]">
                           <TextInput placeholder ='Search Boutique' placeholderTextColor={"gray"}
@@ -53,8 +54,24 @@ export default function ProfileScreen(){
                 {/* main */}
                 {/* categories */}
                 <Categories />
+
+               {/* Botique's */}
+               {/* <View className="mt-5">
+                {
+                  [botiques,botiques,botiques].map((item,index)=>{
+                    return (
+                      <Botiques
+                       key={index}
+                       title={item.title}
+                       botiques={item.botiques}
+                       description={item.description}
+                      />
+                    )
+                  })
+                }
+               </View> */}
+             <Botiques />
                </ScrollView>
-          {/* //   </View>      */}
            </SafeAreaView>
     )
 }

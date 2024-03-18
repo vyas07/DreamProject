@@ -26,3 +26,53 @@ export const categories = [
     },
 
 ]
+
+export const botiques = [
+    {
+        id : 1,
+        title : "Mugdha",
+        image : require('../../images/botiquestore.jpg'),
+        description : "Blouse",
+        star : require('../../images/star.png'),
+        rating : 4,
+        reviews :"4.4k"
+
+    },
+    {
+        id : 2,
+        title : "Saache",
+        image : require('../../images/botiquestore.jpg'),
+        description : "Blouse",
+        star : require('../../images/star.png'),
+        rating : 4,
+        reviews :"4.4k"
+    },
+    {
+        id : 3,
+        title : "Fashion",
+        image : require('../../images/botiquestore.jpg'),
+        description : "Blouse",
+        star : require('../../images/star.png'),
+        rating : 4,
+        reviews :"4.4k"
+    },
+    {
+        id : 4,
+        title : "poornima",
+        image : require('../../images/botiquestore.jpg'),
+        description : "Blouse",
+        star : require('../../images/star.png'),
+        rating : 4,
+        reviews :"4.4k"
+    },
+    {
+        id : 5,
+        title : "trends",
+        image : require('../../images/botiquestore.jpg'),
+        description : "Blouse",
+        star : require('../../images/star.png'),
+        rating : 4,
+        reviews :"4.4k"
+    },
+
+]
